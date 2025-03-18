@@ -2,3 +2,6 @@ venv/
 db.sqlite3
 personal_portfolio/__pycache__
 pages/__pycache__
+projects/__pycache__
+*/migrations/*
+!*/migrations/__init__.py
