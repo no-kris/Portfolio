@@ -1,5 +1,73 @@
 {% extends "base.html" %}
 
+{% block title %}Kris | Portfolio{% endblock title %}
+
 {% block page_content %}
-    <h1>Welcome to my Personal Portfolio</h1>
+    <!-- Hero Section -->
+    <div class="container mt-5 pt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold">Hey there, I'm Kris</h1>
+                <h2 class="text-secondary mb-4">Python Developer</h2>
+                <p class="lead mb-4">
+                    I build things with Python - from data tools to automation scripts.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="{% url 'project_index' %}" class="btn btn-primary">Check out my work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container section-padding my-5 py-5">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="display-5 fw-bold">About Me</h2>
+                <hr class="w-25 mx-auto">
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-md-5 p-4">
+                <h3 class="mb-4 ps-2">A bit about me</h3>
+                <p class="mb-4 px-2">
+                    I'm just a regular person who happens to really enjoy coding in Python. I like fixing problems - whether it's making sense of data or automating tasks.
+                </p>
+
+                <p class="mb-4 px-2">
+                    When I'm not staring at a screen, I'm probably at the gym trying to stay in shape, reading whatever catches my interest (from sci-fi novels to technical blogs), or tinkering with random projects at home.
+                </p>
+
+                <p class="mb-4 px-2">
+                    I'm still learning something new every day. The tech world moves fast, and I'm just trying to keep up while focusing on building stuff. I find that the most satisfying projects are ones that give me a real challange &#128513;. 
+                </p>
+            </div>
+
+            <div class="col-md-5 p-4">
+                <h3 class="mb-4 ps-2">Things I work with</h3>
+                
+                <h5 class="ps-2 pt-2">Code stuff</h5>
+                <ul class="mb-4 ps-4">
+                    <li class="py-1">Python (for pretty much everything)</li>
+                    <li class="py-1">Building and connecting APIs</li>
+                    <li class="py-1">Scripts that save time and headaches</li>
+                </ul>
+
+                <h5 class="mt-4 ps-2 pt-3">Data stuff</h5>
+                <ul class="mb-4 ps-4">
+                    <li class="py-1">Machine learning (still figuring it out)</li>
+                    <li class="py-1">Making sense of data</li>
+                    <li class="py-1">Handling larger datasets</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="container-fluid bg-primary text-white py-4 mt-5">
+        <div class="container text-center py-2">
+            <h3 class="fw-bold mb-4">The nuts and bolts</h3>
+            <p>Built this site with Python, Django, HTML, and Bootstrap - nothing fancy, just practical</p>
+        </div>
+    </div>
 {% endblock page_content %}
