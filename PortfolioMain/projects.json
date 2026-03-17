@@ -1,0 +1,46 @@
+{
+  "Projects": [
+    {
+      "name": "Logos Bible Study",
+      "tech": "HTML • CSS • JavaScript",
+      "description": "Logos is a free Bible study tool for helping users go deeper into their Bible study. It uses AI models to generate theological analysis, historical context, and linguistic lens on Bible verses.",
+      "link": "https://logos-bible-study.com/"
+    },
+    {
+      "name": "FitGen: AI Coach",
+      "tech": "PWA • React • JavaScript • AI • CSS • Firebase",
+      "description": "An AI-powered workout planner that helps users create and track their workout routines that are personalized to their fitness goals, experience level, and workout preferences.",
+      "link": "https://apps.apple.com/au/app/fitgen-ai-coach/id6757277137"
+    },
+    {
+      "name": "Reflections: Faith Builder",
+      "tech": "PWA • React • JavaScript • CSS/SASS • Firebase",
+      "description": "A daily prayer and gratitude tracker app designed to help users build a consistent spiritual habit. Features gamified elements including a dynamic 'spirit flame' that grows with consistency and unlockable badges.",
+      "link": "https://apps.apple.com/us/app/reflections-faith-builder/id6758561915"
+    },
+    {
+      "name": "Neon Drifter",
+      "tech": "HTML • CSS • JavaScript",
+      "description": "A 2D platformer game where players jump, dash, and teleport through neon levels. Instead of just jumping, you build up \"instability\" to glitch through walls, teleport across gaps, and phase past deadly hazards. Being careful to not let the glitching to cause you to fall.",
+      "link": "https://neondrifter.xyz/"
+    },
+    {
+      "name": "NPC Chat",
+      "tech": "React • JavaScript • AI • Firebase",
+      "description": "An AI chat application that allows users to chat with randomly generated NPC characters with a focus on roleplay and creativity.",
+      "link": "https://npcchat.app/"
+    },
+    {
+      "name": "We Pray",
+      "tech": "Python • Flask • Jinja • CSS • SQLAlchemy • Supabase",
+      "description": "A prayer request platform where users can submit, share, and support prayer needs in a community centered around compassion.",
+      "link": "https://wepray.faith/"
+    },
+    {
+      "name": "Daily Bread Journal",
+      "tech": "React • JavaScript • CSS • HTML • Supabase",
+      "description": "A prayer journaling web app that encourages daily reflection and tracking to deepen one's relationship with God.",
+      "link": "https://dailybreadjournal.life/"
+    }
+  ]
+}
