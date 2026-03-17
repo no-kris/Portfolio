@@ -699,3 +699,44 @@ textarea {
     padding: 1rem;
   }
 }
+
+.agent-link-container {
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.agent-link-container p {
+  font-size: 1.6rem;
+  color: var(--ink-medium);
+}
+
+.agent-link {
+  color: var(--accent);
+  font-weight: 700;
+  margin-left: 0.5rem;
+  pointer-events: auto;
+  transition:
+    text-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+.agent-link:hover {
+  color: var(--accent-hover);
+  text-shadow:
+    0 0 12px var(--accent-hover),
+    0 0 20px var(--accent-hover),
+    0 0 30px var(--accent-hover);
+}
+
+@media (max-width: 768px) {
+  .agent-link-container p {
+    font-size: 1.2rem;
+  }
+  .agent-link-container {
+    top: 1rem;
+  }
+}

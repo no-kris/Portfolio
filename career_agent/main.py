@@ -53,13 +53,13 @@ class Me:
             api_key=os.getenv("AGENT_API_KEY"), base_url=os.getenv("BASE_URL")
         )
         self.name = "Kris Treska"
-        reader = PdfReader("../PortfolioMain/kris_treska_resume.pdf")
+        reader = PdfReader("me/kris_treska_resume.pdf")
         self.resume = ""
         for page in reader.pages:
             text = page.extract_text()
             if text:
                 self.resume += text
-        with open("summary.txt", "r", encoding="utf-8") as f:
+        with open("me/summary.txt", "r", encoding="utf-8") as f:
             self.summary = f.read()
 
     def handle_tool_call(self, tool_calls):
