@@ -4,11 +4,10 @@ from typing import Any
 
 import gradio as gr
 import requests
+from agent_tools import record_unknown_question_json, record_user_details_json
 from dotenv import load_dotenv
 from openai import OpenAI
 from pypdf import PdfReader
-
-from agent_tools import record_unknown_question_json, record_user_details_json
 
 load_dotenv(override=True)
 
@@ -53,13 +52,19 @@ class Me:
             api_key=os.getenv("AGENT_API_KEY"), base_url=os.getenv("BASE_URL")
         )
         self.name = "Kris Treska"
-        reader = PdfReader("me/kris_treska_resume.pdf")
+        import os
+
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        resume_path = os.path.join(current_dir, "me", "kris_treska_resume.pdf")
+        summary_path = os.path.join(current_dir, "me", "summary.txt")
+
+        reader = PdfReader(resume_path)
         self.resume = ""
         for page in reader.pages:
             text = page.extract_text()
             if text:
                 self.resume += text
-        with open("me/summary.txt", "r", encoding="utf-8") as f:
+        with open(summary_path, "r", encoding="utf-8") as f:
             self.summary = f.read()
 
     def handle_tool_call(self, tool_calls):
