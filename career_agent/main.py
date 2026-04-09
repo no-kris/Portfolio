@@ -4,10 +4,11 @@ from typing import Any
 
 import gradio as gr
 import requests
-from agent_tools import record_unknown_question_json, record_user_details_json
 from dotenv import load_dotenv
 from openai import OpenAI
 from pypdf import PdfReader
+
+from agent_tools import record_unknown_question_json, record_user_details_json
 
 load_dotenv(override=True)
 
@@ -52,7 +53,6 @@ class Me:
             api_key=os.getenv("AGENT_API_KEY"), base_url=os.getenv("BASE_URL")
         )
         self.name = "Kris Treska"
-        import os
 
         current_dir = os.path.dirname(os.path.abspath(__file__))
         resume_path = os.path.join(current_dir, "me", "kris_treska_resume.pdf")
