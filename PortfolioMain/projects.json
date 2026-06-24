@@ -1,10 +1,16 @@
 {
   "Projects": [
     {
-      "name": "Logos Bible Study",
+      "name": "Solv AI",
+      "tech": "TypeScript • ReactJS • Python • FastAPI",
+      "description": "Solv AI is a free web application for solving LLM-generated coding problems. Allowing users to practice their DS&A skills on dynamically generated problems.",
+      "link": "https://solv-ai.vercel.app/"
+    },
+    {
+      "name": "Verse Dig Bible Study",
       "tech": "HTML • CSS • JavaScript",
-      "description": "Logos is a free Bible study tool for helping users go deeper into their Bible study. It uses AI models to generate theological analysis, historical context, and linguistic lens on Bible verses.",
-      "link": "https://logos-bible-study.com/"
+      "description": "Verse Dig is a free Bible study tool for helping users go deeper into their Bible study. It uses AI models to generate theological analysis, historical context, and linguistic lens on Bible verses.",
+      "link": "https://verse-dig-bible-study.netlify.app/"
     },
     {
       "name": "FitGen: AI Coach",
